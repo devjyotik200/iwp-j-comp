@@ -1,0 +1,56 @@
+
+<html>
+    <head>
+        <title>Welcome To VIT Inline E Learning Portal</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+        <script src="js/jquery.min.js"></script>
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Staatliches&family=Dosis:wght@200&family=Gaegu&display=swap&family=Averia+Sans+Libre:wght@300&family=Girassol&display=swap" rel="stylesheet">
+        <link href="css/index.css" rel="stylesheet">
+        <link href="css/login.css" rel="stylesheet">
+        <link href="css/home.css" rel="stylesheet">
+        <script src="js/index.js"></script>
+    </head>
+    <body>
+        <div id="wrapper">
+            <div class="section static" id="login">
+                <span id="errlog"></span>
+                <div id="form">
+                    <h1>Log In</h1>
+                    <form id="log" >
+                        <label for="user" id="u">Email</label><br>
+                        <input type="text" id="user" name="u" placeholder="Email"><br>
+                        <label for="pwd" id="p">Password</label><br>
+                        <input type="password" id="pwd" name="p" placeholder="Password">
+                        <br><div id="err"></div>
+                        <span class="but" >Submit</span>
+                        <span class="but" >Reset</span>
+                    </form><br>
+                    <span class="newacc" onclick="getReg()">Not a user? Join today.</span>
+                </div>
+                <div id="regform">
+                    <h1>Registration</h1>
+                    <form id="reg" >
+                        <label for="fn">First Name </label>
+                        <input type="text" id="fn" name="fname"><br>
+                        <label for="ln">Last Name </label>
+                        <input type="text" id="ln" name="lname"><br>
+                        <label for="user">Enter email </label>
+                        <input type="email" id="user" name="u"><br>
+                        <label for="pwd">New Password </label>
+                        <input type="password" id="pwd" name="p"><br>
+                        <label for="cp">Once again for luck </label>
+                        <input type="password" name="cp">
+                        <br><div id="er"></div>
+                        <span class="but" >Submit</span>
+                        <span class="but">Reset</span>
+                        <span class="newacc" onclick="getLog()">Already a user? Log in here.</span>
+                    </form>
+                </div>
+            </div>
+           
+        </div>
+    </body>
+</html>

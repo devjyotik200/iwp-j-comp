@@ -1,0 +1,26 @@
+
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+        <title>Administrator login</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/admin.css">
+    </head>
+    <body>
+        <div id="login">
+            <h4></h4>
+            <h2 style="text-align: left;">Administrator Login</h2>
+            <form id="adminlog" action="/cred_check.php" method="POST" onsubmit="return validateDetails()" autocomplete="off">
+                <label for="user">Username</label>
+                <input type="text" id="user" name="u" placeholder="Username"><br>
+                <label for="pwd">Password</label>
+                <input type="password" id="pwd" name="p" placeholder="Password">
+                <br><div id="err"></div>
+                <input type="submit" value="Submit">
+                <input type="reset" onclick="resetForm()">
+            </form>
+            <input type="button" >
+        </div>
+    </body>
+</html>
